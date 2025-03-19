@@ -1,18 +1,16 @@
 {
   "name": "moment5-dynamiska-webbplatser",
   "version": "1.0.0",
+  "author": "thne1900",
+  "license": "ISC",
   "source": "src/index.html",
   "browserslist": ">0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel --open chrome",
     "build": "parcel build"
   },
-  "author": "thne1900",
-  "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.13.3",
-    "parcel": "^2.13.3",
-    "sharp": "^0.33.5"
+    "parcel": "^2.13.3"
   }
 }
