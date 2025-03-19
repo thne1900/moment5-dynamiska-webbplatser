@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Webbplatsens startsida, innehållande beskrivning kring användningen av Sass."><!--keywords for search engines-->
+<link rel="stylesheet" href="styles/main.scss"><!--Link to the page's scss file-->
+<title>Välkommen</title>
+<script src="js/main.js" type="module"></script><!--Linked javascript file-->
+</head>
+<body>
+<header id="header">
+<nav id="menu-responsive"><!--Navigation menu-->
+    <div id="menu-hamburger" class="menu-hamburger">
+    <span class="row"></span>
+    <span class="row"></span>
+    <span class="row"></span>
+</div>
+    <ul id="links" class="links">
+        <li><a href="index.html">STARTSIDA</a></li>
+        <li><a href="sass.html">SASS</a></li>
+        <li><a href="animation.html">ANIMERING</a></li>
+        <li><a href="#">Menyval 4</a></li>
+        <li><a href="#">Menyval 5</a></li>
+    </ul>
+</nav>
+    </header>
+    <div class="grid-container"><!--Div element with a grid container.-->
+    <article class="welcome"><!--The text content of the page-->
+    <h1>Välkommen!</h1>
+    <p><strong>Här är webbplatsen som kommer presentera hur jag använt mig av CSS-preprocessor och nedan följer
+        målet med denna uppgift:</strong></p>
+    <p>Detta moment har som syfte att skapa en förståelse kring användningen av CSS-preprocessorer. 
+        Att sedan kunna tillämpa SASS vid arbetsprocessen på CSS, för att förenkla arbetet. 
+        Även att ta utvecklingsmiljön från de tidigare momenten (1 och 2) som grund för att sedan via parcel 
+        konvertera filerna (SASS).</p>
+    <p>Mitt fokus i detta moment har varit på färg och design, att testa färgnyanser och hitta ett passande färgtema. Att tillämpa funktioner kring ljust/mörkt 
+        tema beroende på en användares inställningar har också utformats.</p>
+    </article>
+    <picture class="image1"><!--Pictures elements containing different image formats on the website's images-->
+        <source srcset="./images/image1.jpg?as=avif&width=500" type="image/avif">
+        <source srcset="./images/image1.jpg?as=webp&width=500" type="image/webp">
+        <source srcset="./images/image1.jpg?width=500" type="image/jpg">
+        <img src="./images/image1.jpg?width=300" alt="Filstruktur i programmet Visual Studio Code">
+    </picture>
+<picture class="image2">
+<source srcset="./images/image2.jpg?as=avif&width=500" type="image/avif">
+<source srcset="./images/image2.jpg?as=webp&width=500" type="image/webp">
+<source srcset="./images/image2.jpg?width=500" type="image/jpg">
+<img src="./images/image2.jpg?width=300" alt="Filer som versionshanteras på GitHub.">
+</picture>
+    <footer class="footer1">
+    <p><strong>DT211G-Frontend-baserad webbutveckling</strong></p>
+    <p>Moment 3: CSS-preprocessorer</p>
+    <p>Thne1900</p>
+    <p>VT 2025</p>
+    </footer>
+    </div>
+    </body>
+    </html>

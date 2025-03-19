@@ -1,0 +1,55 @@
+/*Variables used on color schemes.*/
+$bg-dark:rgb(30, 19, 38);
+$color-dark: grey;
+$bg-light:#FF1493;
+$color-light:black;
+$text-color:#E98EAB;
+$bg-light-nav:#FFFFFF;
+$bg-light-top:pink;
+$bg-footer-color:darken(pink, 5%);
+$color-light-footer:lighten(black, 30%);
+$bg-header-dark: rgb(57, 4, 57);
+$color-header-dark: black;
+$bg-footer-dark:  rgb(16, 16, 62);
+
+/*Color scheme with media rule for light and dark.*/
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: $bg-light;
+        color: $color-light;
+    }
+    #header {
+        background-color:$bg-light-top;
+    }
+    nav ul li a{
+        background-color: $bg-light-nav; color:$text-color;
+    }
+    h1{
+        color:$text-color;
+    }
+    footer {
+        background-color: $bg-footer-color; 
+        color:$color-light-footer;
+    }
+}
+
+
+@media (prefers-color-scheme:dark){
+    body {
+        background-color:$bg-dark;
+        color:$color-dark;
+    }
+    footer {
+        background-color: $bg-footer-dark; 
+        color:$color-dark; 
+        text-shadow: none;
+    }
+    nav ul li a {
+        color: $color-header-dark;
+    }
+    #header {
+        background-color: $bg-header-dark;
+    }
+}
+
+

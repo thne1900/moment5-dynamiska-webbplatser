@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Webbplatsens undersida, innehållande grafiska effekter."><!--keywords for search engines-->
+<link rel="stylesheet" href="styles/main.scss"><!--Link to the page's scss file-->
+<title>Animering</title>
+<script src="js/main.js" type="module"></script><!--Linked javascript file-->
+</head>
+<body>
+<header id="header">
+<nav id="menu-responsive"><!--Navigation menu-->
+    <div id="menu-hamburger" class="menu-hamburger">
+    <span class="row"></span>
+    <span class="row"></span>
+    <span class="row"></span>
+</div>
+    <ul id="links" class="links">
+        <li><a href="index.html">STARTSIDA</a></li>
+        <li><a href="sass.html">SASS</a></li>
+        <li><a href="animation.html">ANIMERING</a></li>
+        <li><a href="#">Menyval 4</a></li>
+        <li><a href="#">Menyval 5</a></li>
+    </ul>
+</nav>
+    </header>
+    <div id="bg-image"></div><!--Div element for the header image.-->
+    <div id="bird"></div><!--Div element for the image of the bird-->
+    <div class="grid-container"><!--Div element with a grid container.-->
+        <h1 class="h1anime">Animeringar:</h1>
+        <button id="click-button" type="button">Klicka på knappen</button><!--Button element on the page.-->
+        <!--The textbox that dropped out when the button was clicked.-->
+        <p id="message" class="notShown">Du klickade på knappen! Klicka på knappen igen!</div>
+        <div id="image-con"><!--Div element containing a picture element and another div element-->
+        <picture><!--Picture element containing different image formats on the website's images-->
+            <source srcset="./images/sommar.jpeg?as=avif" type="image/avif">
+            <source srcset="./images/sommar.jpeg?as=webp" type="image/webp">
+            <source srcset="./images/sommar.jpeg?" type="image/jpeg">
+            <img id="sommar" src="./images/sommar.jpeg?" alt="Liten flicka sträcker sig efter en blomma i gräset.">
+        </picture>
+        <div id="over-lay"></div><!--div element for effects.-->
+        </div>
+    <footer class="footer3">
+    <br>
+    <p><strong>DT211G-Frontend-baserad webbutveckling</strong></p>
+    <p>Moment 4: Grafiska effekter med CSS</p>
+    <p>Thne1900</p>
+    <p>VT 2025</p>
+    <br>
+    </footer>
+    </div>
+    </body>
+    </html>

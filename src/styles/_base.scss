@@ -1,0 +1,241 @@
+/*Created variables used on elements.*/
+$font-stack:Arial, sans-serif;
+$bg-color:#FF1493;
+$bg-color-nav:#FFFFFF;
+$bg-color-top:pink;
+$primary-color:#000000;
+$secondary-color:#E98EAB;
+$dark-color:darken(pink, 5%);
+$light-color:lighten(black, 30%);
+$font-size-standard:1.3em;
+$font-size-nav:1.6em;
+$lineheight-standard:1.5;
+$width-standard:1512px;
+$mar-l:auto;
+$mar-r:auto;
+
+/*Elements have been given properties after some of the created variables.*/
+body{
+    font-family:$font-stack;
+    background-color: $bg-color;
+    color:$primary-color;
+    max-width:$width-standard;
+    margin:$mar-l; 
+    margin:$mar-r;
+}
+
+h1{
+    color:$secondary-color;
+    text-align: center;
+}
+
+.welcome {
+    line-height: $lineheight-standard; 
+    margin-bottom: 30%;
+}
+
+/*Here an inheritance (@extend) is used on the element.*/
+.sass {
+    @extend.welcome; 
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+#header {
+    background-color: $bg-color-top;
+    max-width:$width-standard;
+    height:150px;
+    margin:$mar-l;
+    margin:$mar-r;
+    box-shadow: 8px 8px 10px rgb(0,0,0,0.70);
+}
+
+/*A nesting is done here.*/
+nav{
+    ul {list-style: none; 
+        display:flex;
+    }
+
+    li {box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+        margin-top:40px;
+        padding: 10px; 
+        margin-right: 20px;
+    
+        a {font-size: $font-size-nav; 
+            color:$secondary-color;
+            background-color: $bg-color-nav;
+            text-decoration:none;
+        }
+    }  
+} 
+
+a:hover {
+    background-color:$bg-color-top;
+    cursor: pointer;
+}
+
+#menu-responsive {
+    display:flex;
+    justify-content: space-between;
+    justify-content: right;
+    align-items: center;
+    margin-right:20px;
+}
+
+.menu-hamburger{
+    display: none;
+    flex-direction: column;
+    cursor:pointer;
+}
+
+.row{
+    width:40px;
+    height:4px;
+    background-color: black;
+    margin:6px;
+}
+/*Have inserted Keyframes on the header image and some properties on the animation.*/
+#bg-image {
+    max-width:1512px;
+    height:300px;
+    background-image: url(../images/landskap.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+    animation-name: bgImage;
+    animation-delay: 1s;
+    animation-duration: 6s;
+    animation-duration: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/*Have inserted keyframes on the image with the bird and properties for the animation.*/
+#bird {
+    position:absolute;
+    width:200px;
+    height: 150px;
+    background-image: url(../images/dove-9937_128.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: birdFly;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: linear;
+}
+
+/*Have inserted keyframes on the message box and properties on the animation.*/
+#message {
+    margin:$mar-l;
+    margin:$mar-r;
+    text-align: center;
+    margin-top: 100px;
+    padding:10%;
+    margin-bottom:2%;
+    font-size: 1.5em;
+    border: 4px solid white;
+    font-weight: bold;
+    color:$primary-color;
+    animation-name:messageVisible;
+    animation-duration: 4s;
+    animation-duration: linear;
+    animation-iteration-count: infinite;
+}
+
+.notShown {display: none;}
+
+/*Have inserted keyframes on the button and some properties for the animation.*/
+#click-button {
+    width:80%;
+    height:auto;
+    background-color: $secondary-color;
+    font-weight: bold;
+    padding:6%;
+    border-radius: 25px;
+    border:4px solid white;
+    animation-name: colorButton;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/*When hovering over the button, some effects have been added.*/
+#click-button:hover {
+    width:100%;
+    height:auto;
+    cursor: pointer;
+    box-shadow: 8px 8px 12px rgba(0,0,0,0.5);
+    transition: 3s ease;
+}
+
+/*Container for the image where some effects have been applied.*/
+#image-con {
+    width:300px;
+    height:auto;
+    position:relative;
+    margin: 4% auto;
+    transition: 1s ease;
+}
+
+#sommar {
+    width:100%;
+    height:auto;
+    border:none;
+    border-radius: none;
+}
+
+/*The color effect on the image with its properties.*/
+#over-lay{
+    width:100%;
+    height:auto;
+    margin: 0;
+    background-color: pink;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+#image-con:hover {
+    cursor: pointer;
+    width:350px;
+    height:auto;
+    border:4px solid white;
+    box-shadow: 8px 8px 12px rgba(0,0,0,5);
+}
+
+/*Effect around the opacity when hovering.*/
+#over-lay:hover {
+    opacity: 0.5;
+}
+   
+footer {
+    background-color:$dark-color; 
+    color:$light-color;
+    text-align: center;
+    text-shadow: 2px 2px 4px white;
+}
+/*Media rule for the hamburger menu and animations/effects at the breakpoint of 1024px.*/
+@media (max-width:1024px) {
+        .menu-hamburger{display:flex;}
+        nav ul {display: none;flex-direction: column;position:absolute; text-align: center;
+        right:0;top:70px;margin-right: 2%;padding-top:5%;width:170px;height:400px;
+        line-height: 1.4;}
+        nav ul li a {color:$primary-color; font-size: 1em; background-color:$bg-color; font-weight: bold;}
+        .links.active {display:flex;}
+        #bg-image {height:200px;}
+        #click-button {padding:4%; animation-name: colorButtonRespons; animation-duration: 3s;
+            animation-iteration-count: infinite;}
+        }
+
+/*Media rule for the animations/effects at the breakpoint of 600px.*/
+@media (max-width:600px) {
+    #bg-image {height:150px;}
+    #bird {position:absolute;width:100px;height: 75px;animation-name: birdFlyRespons;animation-duration: 5s;
+        animation-iteration-count: infinite;animation-direction: alternate;animation-duration: linear;}
+    #message {font-size: 1.2em;}
+}

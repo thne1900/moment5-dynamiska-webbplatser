@@ -1,0 +1,26 @@
+/*Mixin applied to the images.*/
+@mixin images ($w-size, $h-size, $img-radius, $border){
+    width: $w-size;
+    height: $h-size;
+    border-radius: $img-radius;
+    border: $border;
+}
+img {
+    @include images(50%, auto, 50%, 4px solid white);
+}
+
+/*Mixin on the main header with if/else statement.*/
+@mixin h1 ($h1-size, $shadow) {
+
+    font-size: $h1-size;
+
+    @if $shadow {
+        text-shadow: 4px 4px 8px black;
+    }@else{
+text-shadow: none;
+    }
+}
+h1 {
+    @include h1(2.5em, true);
+}
+
