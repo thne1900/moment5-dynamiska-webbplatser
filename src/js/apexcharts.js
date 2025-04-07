@@ -18,6 +18,7 @@ async function fetchData() {
 
         data = await response.json();
         displayData(data);
+        displayDataAgain(data);
         
 
     }catch (error) {
@@ -61,4 +62,38 @@ async function fetchData() {
     chart.render();
    
 }
+function displayDataAgain(data) {
+
+    let filteredProgram=data.filter((item)=>item.type==="Program");
+    console.log(filteredProgram);
+
+    let topProgram=filteredProgram.sort((a, b)=>b.applicantsTotal-a.applicantsTotal).slice(0,5);
+    console.table(topProgram);
+
+    let outputProgram=topProgram.map(item=>item.name);
+    let tApplicants=topProgram.map(item=>parseInt(item.applicantsTotal,10));
+    console.log(tApplicants);
+
+    let options= {
+        
+        chart: {
+            type:"pie",
+        },
+        series:tApplicants,
+        labels:outputProgram,
+        title: {
+            text:"De 5 mest sökta programmen på Mittuniversitetet HT24",
+            align: "center",
+            style: {
+                fontSize:"14px",
+                color: "white",
+            }
+        }
+    }
+
+    let chart1= new ApexCharts (document.querySelector("#chart1"), options);
+    chart1.render();
+   
+}
+
 

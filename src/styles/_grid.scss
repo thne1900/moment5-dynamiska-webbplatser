@@ -23,6 +23,8 @@ $ma-bot: 10%;
 .h1anime {grid-area:1/2/1/2;}
 #message {grid-area:1/2/1/2;}
 
+.diagram {grid-area:1/2/1/2;}
+
 #click-button {grid-area:2/2/2/2; margin-left: auto; margin-right: auto;}
 
 .image1{ 
@@ -43,8 +45,12 @@ $ma-bot: 10%;
     grid-area:4/2/5/2;
 }
 
+//diagram
 #chart {
     grid-area:2/2/3/2;
+}
+#chart1 {
+    grid-area:4/2/5/2;
 }
 
 .footer1{
@@ -55,6 +61,10 @@ $ma-bot: 10%;
 }
 .footer3 {
     grid-area: 5/1/6/4;
+}
+
+.footer4 {
+    grid-area:6/1/7/4;
 }
 
 /*Media rule for breaking point at 1024px, the elements get other placements.*/

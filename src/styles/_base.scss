@@ -41,6 +41,10 @@ h1{
     margin-bottom: 8%;
 }
 
+.diagram{
+    margin-bottom: 14%;
+}
+
 #header {
     background-color: $bg-color-top;
     max-width:$width-standard;
@@ -212,7 +216,12 @@ a:hover {
 #over-lay:hover {
     opacity: 0.5;
 }
-   
+
+#chart {
+    margin-bottom: 8%;
+}  
+#chart1 {@extend#chart};
+
 footer {
     background-color:$dark-color; 
     color:$light-color;
