@@ -10,4 +10,5 @@
 - I js-filen har datan som ska visas i diagrammen (stapel och cirkel) inhämtats från extern källa med Fetchanrop(API) med async/await.
 - I stapeldiagrammet ser man statistik över de 6 mest sökta kurserna på Mittuniversitetet. 
 - I cirkeldiagrammet framgår de 5 mest sökta programmen på Mittuniveristetet. 
-- Digrammen har fått lite styling på textens utformning.  
+- Digrammen har fått lite styling på textens utformning. 
+- Därefter gjordes installation för JSDoc.
