@@ -228,6 +228,8 @@ a:hover {
 
 #chart {
     margin-bottom: 8%;
+    width:600px;
+    height: auto;
 }  
 #chart1 {@extend#chart};
 
@@ -284,6 +286,7 @@ footer {
     #bird {position:absolute;width:100px;height: 75px;animation-name: birdFlyRespons;animation-duration: 5s;
         animation-iteration-count: infinite;animation-direction: alternate;animation-duration: linear;}
     #message {font-size: 1.2em;}
+    #chart {width:450px;}
     #map {height:300px; width: 96%; margin-left:2%; margin-right:2%;z-index: -1;}
     #button-search {width:80%;}
     #search {width:60%;}
