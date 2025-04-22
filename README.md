@@ -15,4 +15,13 @@
 - Skapade en ny js-fil, map.js, där javascriptkoden innehållande karta och dess funktioner finns. 
 - I map.js-filen skrevs kod för att få ut en bild på en karta och som gör att vid inskriven stad i inputfältet, ska staden visas på kartan. Lade till i funktinen att koordinaterna ska visas tillsammans med den visade staden.
 - Placering och storlek har därefter gjorts på diagrammen och kartan i scss-filerna. 
- 
+- Javascript-filerna har dokumenterats med JSDoc.
+
+## Av Thne1900
+### Kurs: Frontend-baserad webbutveckling
+
+#### Källor:
+- Diagram: https://apexcharts.com/
+- Karta: https://www.openstreetmap.org/#map=14/59.33067/18.05200, https://leafletjs.com/examples/quick-start/
+        https://nominatim.openstreetmap.org/ui/search.html.
+
