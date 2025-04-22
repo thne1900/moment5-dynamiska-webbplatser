@@ -4,9 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Webbplatsens undersida, innehållande en karta."><!--keywords for search engines-->
-<link rel="stylesheet" href="styles/main.scss"><!--Link to the page's scss file-->
+<link rel="stylesheet" href="styles/_base.scss"><!--Link to the page's scss file-->
+<link rel="stylesheet" href="styles/_grid.scss">
 <title>Karta</title>
-<script src="js/main.js" type="module"></script><!--Linked javascript file-->
+<!--<script src="js/main.js" type="module"></script>Linked javascript file-->
+<script src="js/map.js" type="module"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 <body>
 <header id="header">
@@ -27,9 +31,15 @@
     </header>
     <div class="grid-container"><!--Div element with a grid container.-->
 
-    <h1>Karta</h1>
+    <h1 id="header-map">Karta</h1>
+    <p id="map-text">På denna undersida kan du söka valfri stad i sökfältet, som därefter placeras ut på kartan med koordinater!</p>
+
+    <input type="text" id="search" placeholder="Här kan du skriva in staden...">
+    <button id="button-search">Sök stad</button>
+
+    <div id="map"></div>
  
-    <footer class="footer1">
+    <footer class="footer5">
     <p><strong>DT211G-Frontend-baserad webbutveckling</strong></p>
     <p>Moment 5: Dynamiska webbplatser</p>
     <p>Thne1900</p>

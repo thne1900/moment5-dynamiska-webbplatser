@@ -1,13 +1,27 @@
 /*Javascript ApexCharts*/
 "use strict";
 
-//Data från extern url med Fetch-api med async/await.
+/**
+ * @type {Array}- En tom array som har som syfte att fyllas med data. 
+ */
 let data=[];
 
+/**
+ * @function- som körs vid sidinladdning, som med anrop(fetchData) hämtar in data. 
+ */
 window.onload=()=>{
     fetchData();
 }
 
+/**
+ * Ska inhämta data från en extern källa (url).
+ * 
+ * @async-Visar att det är en asynkron funktion.
+ * @function -fetchData, gör anrop till url för att komma åt den innehållande datan.
+ * @function displayData- anropas för att få ut denna funktionens efterfrågade data.
+ * @function displayDataAgain- anropas för att få ut den funktionens begärda data. 
+ * @throws {Error}- ger felmeddelande vid problem vid inhämtning av datan. 
+ */
 async function fetchData() {
 
     try {

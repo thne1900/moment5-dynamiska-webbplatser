@@ -45,6 +45,15 @@ h1{
     margin-bottom: 14%;
 }
 
+#header-map {
+    text-shadow: 4px 4px 8px black;
+}
+
+#map-text {
+    text-align: center;
+    font-weight: bold;
+}
+
 #header {
     background-color: $bg-color-top;
     max-width:$width-standard;
@@ -222,6 +231,34 @@ a:hover {
 }  
 #chart1 {@extend#chart};
 
+#search {
+    width:80%;
+    padding:2%;
+    border-radius: 5px;
+    margin-bottom: 4%;
+    margin-left:$mar-l;
+    margin-right: $mar-r;
+}
+
+#button-search{
+    width:50%;
+    border-radius: 15px;
+    padding:2%;
+    margin-left:$mar-l;
+    margin-right: $mar-r;
+    margin-bottom: 8%;
+}
+#button-search:hover {
+    background-color: $bg-color-nav;
+cursor: pointer;}
+
+#map {height:500px;
+    width:60%;
+    margin-bottom: 8%;
+    margin-left: $mar-l;
+    margin-right: $mar-r;
+}
+
 footer {
     background-color:$dark-color; 
     color:$light-color;
@@ -247,4 +284,7 @@ footer {
     #bird {position:absolute;width:100px;height: 75px;animation-name: birdFlyRespons;animation-duration: 5s;
         animation-iteration-count: infinite;animation-direction: alternate;animation-duration: linear;}
     #message {font-size: 1.2em;}
+    #map {height:300px; width: 96%; margin-left:2%; margin-right:2%;}
+    #button-search {width:80%;}
+    #search {width:60%;}
 }
