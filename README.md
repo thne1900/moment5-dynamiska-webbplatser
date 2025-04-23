@@ -16,6 +16,7 @@
 - I map.js-filen skrevs kod för att få ut en bild på en karta och som gör att vid inskriven stad i inputfältet, ska staden visas på kartan. Lade till i funktinen att koordinaterna ska visas tillsammans med den visade staden.
 - Placering och storlek har därefter gjorts på diagrammen och kartan i scss-filerna. 
 - Javascript-filerna har dokumenterats med JSDoc.
+- Ordnade så att på undersidorna för diagram och karta kan en besökare via en länk komma åt den genererade dokumentationen (JSDoc). 
 
 ## Av Thne1900
 ### Kurs: Frontend-baserad webbutveckling

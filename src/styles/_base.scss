@@ -47,6 +47,7 @@ h1{
 
 #header-map {
     text-shadow: 4px 4px 8px black;
+    font-size: 2.5em;
 }
 
 #map-text {
@@ -260,6 +261,9 @@ cursor: pointer;}
     margin-left: $mar-l;
     margin-right: $mar-r;
 }
+
+.jsdoc{margin-left: $mar-l;
+font-size: 0.9em;}
 
 footer {
     background-color:$dark-color; 
