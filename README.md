@@ -24,6 +24,7 @@
 #### Källor:
 Diagram: 
 - https://apexcharts.com/
+
 Karta: 
 - https://www.openstreetmap.org/#map=14/59.33067/18.05200
 - https://leafletjs.com/examples/quick-start/
