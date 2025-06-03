@@ -14,9 +14,9 @@ window.onload=()=>{
 }
 
 /**
- * Ska inhämta data från en extern källa (url).
+ * Ska inhämta data från en extern källa (url) och visa i diagram.
  * 
- * @async-Visar att det är en asynkron funktion.
+ * @async Visar att det är en asynkron funktion.
  * @function fetchData gör anrop till url för att komma åt den innehållande datan.
  * @function displayData anropas för att få ut denna funktionens efterfrågade data i ett stapeldiagram.
  * @function displayDataAgain anropas för att få ut den funktionens begärda data i ett cirkeldiagram. 
