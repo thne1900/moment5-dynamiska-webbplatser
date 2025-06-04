@@ -39,7 +39,6 @@ async function fetchData() {
         console.error("Ett fel uppstod", error);
         throw error;
     }
-    //console.table(data);
 }
 
 /**
@@ -50,10 +49,7 @@ async function fetchData() {
  function displayDataTopSix(data) {
 
     let filteredCourses=data.filter((item)=>item.type==="Kurs");
-    //console.log(filteredCourses);
-
     let topCourses=filteredCourses.sort((a, b)=>b.applicantsTotal-a.applicantsTotal).slice(0,6);
-    //console.table(topCourses);
 
     let outputCourses=topCourses.map(item=>item.name);
     let totalApplicants=topCourses.map(item=>parseInt(item.applicantsTotal, 10));
@@ -91,14 +87,10 @@ async function fetchData() {
 function displayDataTopFive(data) {
 
     let filteredProgram=data.filter((item)=>item.type==="Program");
-    //console.log(filteredProgram);
-
     let topProgram=filteredProgram.sort((a, b)=>b.applicantsTotal-a.applicantsTotal).slice(0,5);
-    //console.table(topProgram);
 
     let outputProgram=topProgram.map(item=>item.name);
     let tApplicants=topProgram.map(item=>parseInt(item.applicantsTotal,10));
-    //console.log(tApplicants);
 
     let options= {
         chart: {
