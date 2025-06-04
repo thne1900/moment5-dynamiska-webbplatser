@@ -67,7 +67,7 @@ async function fetchData() {
             categories:outputCourses
         },
         title: {
-            text:"De 6 mest sökta kurserna på Mittuniversitetet HT24",
+            text:"De 6 mest sökta kurserna på Miun HT24",
             align: "center",
             style: {
                 fontSize:"18px",
@@ -100,7 +100,7 @@ function displayDataTopFive(data) {
         series:tApplicants,
         labels:outputProgram,
         title: {
-            text:"De 5 mest sökta programmen på Mittuniversitetet HT24",
+            text:"De 5 mest sökta programmen på Miun HT24",
             align: "center",
             style: {
                 fontSize:"18px",

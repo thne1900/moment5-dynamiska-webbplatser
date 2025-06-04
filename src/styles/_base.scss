@@ -227,6 +227,7 @@ a:hover {
     opacity: 0.5;
 }
 
+/*Design for the charts*/
 #chart {
     margin-bottom: 8%;
     width:600px;
@@ -253,17 +254,22 @@ a:hover {
 }
 #button-search:hover {
     background-color: $bg-color-nav;
-cursor: pointer;}
+    cursor: pointer;
+}
 
-#map {height:500px;
+/*Design for the map*/
+#map {
+    height:500px;
     width:60%;
     margin-bottom: 8%;
     margin-left: $mar-l;
     margin-right: $mar-r;
 }
 
-.jsdoc{margin-left: $mar-l;
-font-size: 0.9em;}
+.jsdoc{
+    margin-left: 4%;
+    font-size: 0.9em;
+}
 
 footer {
     background-color:$dark-color; 
@@ -276,7 +282,7 @@ footer {
         .menu-hamburger{display:flex;}
         nav ul {display: none;flex-direction: column;position:absolute; text-align: center;
         right:0;top:70px;margin-right: 2%;padding-top:5%;width:170px;height:400px;
-        line-height: 1.4;}
+        line-height: 1.4; z-index: 1;}
         nav ul li a {color:$primary-color; font-size: 1em; background-color:$bg-color; font-weight: bold;}
         .links.active {display:flex;}
         #bg-image {height:200px;}
@@ -291,6 +297,7 @@ footer {
         animation-iteration-count: infinite;animation-direction: alternate;animation-duration: linear;}
     #message {font-size: 1.2em;}
     #chart {width:450px;}
+    #chart1 {width:450px;}
     #map {height:300px; width: 96%; margin-left:2%; margin-right:2%;z-index: -1;}
     #button-search {width:80%;}
     #search {width:60%;}
