@@ -2,12 +2,14 @@
 
 "use strict";
 /**
- * @type {L.map} Infogar en karta med variabeln: map, med utgångspunkt i Stockholm, Sverige och koordinater och inzoomningsgrad. 
+ * Infogar karta med ett utgångsläge i Stockholm med koordinater och inzoomningsgrad.
+ * @type {L.map} 
  */
 let map = L.map("map").setView([59.32512, 18.07109], 5);
 
 /**
- * @type {L.tileLayer} Lägger på ett tileLayer från OpenStreetmap med en maxzoom. 
+ * Lägger på tilelager från OpenStreetmap med en maxzoom.
+ * @type {L.tileLayer} 
  */
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -15,20 +17,23 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 /**
- * @type {L.marker} Skapat en variabel för att markera på kartan.
+ * Skapar variabel för markering på kartan.
+ * @type {L.marker}
  */
 let marker;
 
-/**
- * @type {HTMLElement} Vid klick (händelsehanterare) på knappen anropas funktionen (searchCity).
+/** 
+ * Lägger på händelsehanterare på ett element i HTML-dokumentet, vid klick på knappen anropas funktionen (searchCity).
+ * @type {HTMLElement}
  */
 document.getElementById("button-search").addEventListener("click", searchCity);
 
 /**
- * @async visar att en asynkron funktion används.
- * @function searchCity Vid inmatning i inputfältet ska den sökta staden visas på kartan med en markering. 
- * @throws {Error} Om det uppstår fel vid den inhämtade datan, blir det felmeddelanden.
- * @example Då en besökare klickar på knappen SÖK STAD ("button-search"), kommer funktionen searchCity att anropas,
+ * Vid sökning av en stad ska den markeras på kartan med koordinater. 
+ * @async 
+ * @function searchCity - Vid inmatning i inputfältet ska den sökta staden visas på kartan med en markering. 
+ * @throws {Error} - Om det uppstår fel vid den inhämtade datan, blir det felmeddelanden.
+ * @example // Då en besökare klickar på knappen SÖK STAD ("button-search"), kommer funktionen searchCity att anropas,
   som kommer visa den sökta staden på kartan med dess koordinater.
  */
 async function searchCity() {

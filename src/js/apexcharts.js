@@ -2,21 +2,22 @@
 "use strict";
 
 /**
- * @type {Array}  - En tom array som har som syfte att fyllas med data.
+ * En tom array som har som syfte att fyllas med data.
+ * @type {Array} 
  */
 let data=[];
 
 /**
- * @function window.onload - Körs vid sidinladdning, som med anrop(fetchData) hämtar in data. 
+ * Körs vid sidinladdning
+ * @function window.onload - Anropar(fetchData) som hämtar in data. 
  */
 window.onload=()=>{
     fetchData();
 }
 
 /**
- * Ska inhämta data från en extern källa (url) och visa i diagram.
- * 
- * @async - Asynkron funktion.
+ * Ska inhämta data från en extern källa (url) och visa i diagram med asynkron funktion.
+ * @async
  * @function fetchData - Gör anrop till url för att komma åt den innehållande datan.
  * @function displayDataTopSix - Anropas för att få ut denna funktionens efterfrågade data i ett stapeldiagram.
  * @function displayDataTopFive - Anropas för att få ut den funktionens begärda data i ett cirkeldiagram. 
