@@ -34,7 +34,8 @@ document.getElementById("button-search").addEventListener("click", searchCity);
  * @function searchCity - Vid inmatning i inputfältet ska den sökta staden visas på kartan med en markering. 
  * @throws {Error} - Om det uppstår fel vid den inhämtade datan, blir det felmeddelanden.
  * @example // Då en besökare klickar på knappen SÖK STAD ("button-search"), kommer funktionen searchCity att anropas,
-  som kommer visa den sökta staden på kartan med dess koordinater.
+  som kommer visa den sökta staden på kartan med dess koordinater. 
+  Sökes tex staden Göteborg visas meddelandet:"Här är göteborg! (Lat: 57.7072326 och Lon: 11.9670171".
  */
 async function searchCity() {
 

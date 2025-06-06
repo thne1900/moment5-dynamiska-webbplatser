@@ -43,7 +43,7 @@ async function fetchData() {
 }
 
 /**
- * Hanterar datan så att den kommer ut i ett stapeldiagram.
+ * Hanterar datan så att den kommer ut i ett stapeldiagram över de 6 mest sökta kurserna.
  * @function displayDataTopSix - Filtrerar och sorterar datan.
  * @param {Array} data - Inhämtad data som ska hanteras för att visas i ett stapeldiagrammet.
  */
@@ -81,7 +81,7 @@ async function fetchData() {
 }
 
 /**
- * Hantera datan så att den visas i ett cirkeldiagram. 
+ * Hantera datan så att den visas i ett cirkeldiagram över de 5 mest sökta programmen. 
  * @function displayDataTopFive - Filtrerar och sorterar datan.
  * @param {Array} data - Inhämtad data som ska hanteras för att visas i ett cirkeldiagrammet.
  */
