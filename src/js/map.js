@@ -25,6 +25,7 @@ let marker;
 /** 
  * Lägger på händelsehanterare på ett element i HTML-dokumentet, vid klick på knappen anropas funktionen (searchCity).
  * @type {HTMLElement}
+ * @event
  */
 document.getElementById("button-search").addEventListener("click", searchCity);
 

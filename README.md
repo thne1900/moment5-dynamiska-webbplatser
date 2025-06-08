@@ -19,7 +19,7 @@
 - Ordnade så att det finns en länk på undersidorna för diagram och karta, så att en besökare kan komma åt den genererade dokumentationen (JSDoc). 
 
 ## Av Thne1900
-### Kurs: Frontend-baserad webbutveckling
+### Kurs: Frontend-baserad webbutveckling VT2025
 
 #### Källor:
 Diagram: 
