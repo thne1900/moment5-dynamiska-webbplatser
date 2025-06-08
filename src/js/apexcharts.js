@@ -9,7 +9,7 @@ let data=[];
 
 /**
  * Körs vid sidinladdning
- * @function window.onload - Anropar(fetchData) som hämtar in data. 
+ * @function - window.onload, anropar(fetchData) som hämtar in data. 
  */
 window.onload=()=>{
     fetchData();
